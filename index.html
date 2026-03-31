@@ -2,15 +2,77 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DHA Tech</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>🚀 DHA TECH</h1>
-    <p>Website đầu tiên của tôi</p>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-xl font-bold">DHA Tech</h1>
+        <nav class="space-x-6">
+          <a href="#" class="hover:text-blue-500">Trang chủ</a>
+          <a href="#about" class="hover:text-blue-500">Giới thiệu</a>
+          <a href="#services" class="hover:text-blue-500">Dịch vụ</a>
+          <a href="#contact" class="hover:text-blue-500">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
 
-    <button onclick="hello()">Click thử</button>
+    <!-- Hero -->
+    <section
+      class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white"
+    >
+      <h2 class="text-4xl font-bold mb-4">Giải pháp tự động hóa & IoT</h2>
+      <p class="mb-6">Chuyên PLC, SCADA, hệ thống giám sát công nghiệp</p>
+      <button class="bg-white text-blue-600 px-6 py-2 rounded-xl font-semibold">
+        Liên hệ ngay
+      </button>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- About -->
+    <section id="about" class="max-w-6xl mx-auto py-16 px-4">
+      <h3 class="text-2xl font-bold mb-6">Về chúng tôi</h3>
+      <p>
+        DHA Tech cung cấp giải pháp tự động hóa, tích hợp hệ thống, giám sát từ
+        xa cho nhà máy, tòa nhà và hạ tầng.
+      </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-gray-100 py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-2xl font-bold mb-10 text-center">Dịch vụ</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-2xl shadow">
+            <h4 class="font-bold mb-2">PLC & SCADA</h4>
+            <p>Lập trình và triển khai hệ thống điều khiển.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow">
+            <h4 class="font-bold mb-2">IoT công nghiệp</h4>
+            <p>Kết nối và giám sát thiết bị từ xa.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow">
+            <h4 class="font-bold mb-2">Tủ điện</h4>
+            <p>Thiết kế và thi công tủ điện công nghiệp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-6xl mx-auto py-16 px-4">
+      <h3 class="text-2xl font-bold mb-6">Liên hệ</h3>
+      <p>Email: contact@dhatech.vn</p>
+      <p>Điện thoại: 0900 000 000</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+      <p>© 2026 DHA Tech. All rights reserved.</p>
+    </footer>
   </body>
 </html>
