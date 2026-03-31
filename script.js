@@ -1,1 +1,3 @@
-console.log("Web đã chạy");
+function hello() {
+  alert("Web chạy ngon rồi!");
+}
